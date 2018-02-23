@@ -39,8 +39,6 @@ PODS:
     - GooglePlaces (= 2.2.0)
 
 DEPENDENCIES:
-  - GoogleAnalytics (= 3.17.0)
-  - GooglePlaces (= 2.2.0)
   - TestEbus (from `../`)
 
 EXTERNAL SOURCES:
@@ -59,8 +57,8 @@ SPEC CHECKSUMS:
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  TestEbus: d17beec5a4a2509da8e8f1bcbd4c9d6308dfb64f
+  TestEbus: 4e43b996863c538fbec26c7313a2af88e0e83fbf
 
-PODFILE CHECKSUM: d3997c6bc45702d6acdf25a541ca4ea05cfcbbda
+PODFILE CHECKSUM: 9a0938d4fd89533f344ec5ddd6b4fd5ae43bc5d5
 
 COCOAPODS: 1.4.0

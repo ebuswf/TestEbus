@@ -38,9 +38,9 @@ TODO: Add long description of the pod here.
   #      'TestEbus' => ['TestEbus/Assets/*.storyboard']
   #}
   
+  s.static_framework = true
   s.ios.dependency 'Firebase', '4.0.4'
   s.ios.dependency 'Firebase/DynamicLinks'
-  s.static_framework = true
   s.ios.dependency 'Fabric'
   s.ios.dependency 'GoogleAnalytics', '3.17.0'
   s.ios.dependency 'GooglePlaces', '2.2.0'

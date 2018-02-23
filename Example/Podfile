@@ -4,12 +4,11 @@ use_frameworks!
 
 target 'TestEbus_Example' do
   pod 'TestEbus', :path => '../'
-  pod 'GoogleAnalytics',                      '3.17.0'
-  pod 'GooglePlaces',                         '2.2.0'
+  
+  pod 'GoogleAnalytics'
 
   target 'TestEbus_Tests' do
     inherit! :search_paths
-
     
   end
 end

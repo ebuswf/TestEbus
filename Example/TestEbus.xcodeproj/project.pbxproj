@@ -33,6 +33,7 @@
 		3A103BCBB59A28ECBA1366C1 /* Pods-TestEbus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestEbus_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestEbus_Example/Pods-TestEbus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		474DE12B427A6D28E1876D69 /* TestEbus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestEbus.podspec; path = ../TestEbus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		50940781660E669CBEDDC040 /* Pods-TestEbus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestEbus_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestEbus_Example/Pods-TestEbus_Example.release.xcconfig"; sourceTree = "<group>"; };
+		59380A062040843400FB81A5 /* TestEbus_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestEbus_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		5E3D108B87E31597E11CF152 /* Pods-TestEbus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestEbus_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestEbus_Tests/Pods-TestEbus_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TestEbus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestEbus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				59380A062040843400FB81A5 /* TestEbus_Example-Bridging-Header.h */,
 			);
 			name = "Example for TestEbus";
 			path = TestEbus;
@@ -216,7 +218,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = TVBZ4E6WS5;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -524,12 +526,15 @@
 			baseConfigurationReference = 3A103BCBB59A28ECBA1366C1 /* Pods-TestEbus_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TVBZ4E6WS5;
 				INFOPLIST_FILE = TestEbus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestEbus/TestEbus_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -540,12 +545,14 @@
 			baseConfigurationReference = 50940781660E669CBEDDC040 /* Pods-TestEbus_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TVBZ4E6WS5;
 				INFOPLIST_FILE = TestEbus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestEbus/TestEbus_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
