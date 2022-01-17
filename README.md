@@ -27,3 +27,4 @@ ebuswf, enric.busquet@wefox.com
 ## License
 
 TestEbus is available under the MIT license. See the LICENSE file for more info.
+2022
